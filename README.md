@@ -1,5 +1,13 @@
 # AWS CloudFormation Connection Lookup Resource
 
+> [!IMPORTANT]
+> **This repository is archived and replaced by [jamesward/cfn-extras-resource](https://github.com/jamesward/cfn-extras-resource).**
+> Its **Connection lookup** resource (`Handler: cfn_extras.connection_lookup.handler`) resolves the CodeConnections ARN behind a stack's CloudFormation Git sync (`Fn::GetAtt <Resource>.ConnectionArn`). It ships with the other resources as one
+> Lambda artifact in a public, versioned S3 bucket, so there's nothing to build. See that repository's
+> README for the CloudFormation snippet and the per-release `S3ObjectVersion`.
+>
+> The original code and documentation below are kept for reference.
+
 This project provides a custom CloudFormation resource that resolves the ARN of
 the AWS CodeConnections (GitHub App) connection that a stack uses for
 **CloudFormation Git sync**.
